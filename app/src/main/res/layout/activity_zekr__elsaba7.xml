@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Saba7.Zekr_Elsaba7"
+    android:background="@color/LightCyan"
+    android:orientation="vertical"
+
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    >
+
+    <TextView
+        android:id="@+id/zekr_1"
+        android:layout_width="wrap_content"
+        android:layout_height="164dp"
+        android:gravity="center"
+        android:text="@string/zekr1"
+        android:textColor="@color/Black"
+        android:textSize="22sp" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/play_image"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_play_arrow"
+            android:layout_margin="5dp"
+            android:layout_width="0dp" />
+
+        <ImageButton
+            android:id="@+id/puse_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_pause"
+            android:layout_margin="5dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/forward_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_fast_forward"
+            android:layout_margin="5dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/rewind_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_fast_rewind"/>
+
+        <Button
+            android:id="@+id/counter_down"
+            android:layout_width="0dp"
+            android:layout_height="63dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="10"
+            android:ems="100"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
